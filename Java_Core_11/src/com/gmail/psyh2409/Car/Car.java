@@ -1,12 +1,12 @@
-package com.gmail.psyh2409.Avto;
+package com.gmail.psyh2409.Car;
 
-public class Avto {
+public class Car {
 	private double horsepower;
 	private int year;
 	private Rule rule;
 	private Engine engine;
 	
-	public Avto() {
+	public Car() {
 		setHorsepower((Math.random()*200));
 		setYear((int) (1900 + Math.random()*(2023 - 1900)));
 		setRule(new Rule((50 * Math.random()), "leather"));
@@ -47,7 +47,7 @@ public class Avto {
 
 	@Override
 	public String toString() {
-		return "Avto [horsepower=" + horsepower + 
+		return "Car [horsepower=" + horsepower + 
 				", year=" + year + ", rule=" + rule + 
 				", engine=" + engine + "]";
 	}
